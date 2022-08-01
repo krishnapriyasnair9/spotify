@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4 col-md-2 col-lg-4 mb-3 mb-md-0">
+            {%for artist in artits%}
+            <div class="card text-bg-danger mb-3" style="max-width: 18rem; display:inline-block">
+                <div class="card-body">
+                    <p class="card-text">ARTIST NAME:{{artist.name}}</p>
+                    <p class="card-text">DATE OF BIRTH:{{artist.DOB}}</p>
+                    <p class="card-text">BIO:{{artist.bio}}</p>
+
+
+
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
